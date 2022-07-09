@@ -6,12 +6,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import random
 import webbrowser
 
-#Credits:
-#Spotify Credentials Imported from developer.spotify.com
-#OpenWeatherMap Credentials Imported from openweathermap.org
-#SpotiPY built in methods created with help from spotipy.readthedocs.io and developer.spotify.com
-#OpenWeatherMap built in methods created with help frpip om openweathermap.org and Youtuber:Keith Galli
-#Tkinter built in methods created with help from tutorialspoint.com and Youtuber:Keith Galli
 
 #All spotify developer credentials
 cid = '39bccba7d0564635884cc8635037cb50'
