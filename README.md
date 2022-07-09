@@ -8,12 +8,12 @@ You will receive the following information for any location that is entered:
 **Weather Information:**\
 Location\
 Condition\
-Temperature(degF)\
-Minimum Temp\
-Maximum Temp\
-Feels Like\
-Humidity\
-Wind Speed
+Temperature(°F)\
+Minimum Temp(°F)\
+Maximum Temp(°F)\
+Feels Like(°F)\
+Humidity(%)\
+Wind Speed(mph)
 
 **Spotify Information:**\
 Playlist Name\
