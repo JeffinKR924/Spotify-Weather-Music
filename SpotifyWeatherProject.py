@@ -166,7 +166,7 @@ board.resizable(width=0, height=0)
 
 #Imports a background image and creates a label to display it
 image = Image.open(r"C:Extra Stuff\pic1.jpg")
-image = image.resize((850, 620), resample=Image.ANTIALIAS)
+image = image.resize((850, 620), resample=Image.Resampling.LANCZOS)
 photo = ImageTk.PhotoImage(image)
 label = tk.Label (image=photo)
 label.image = photo 
