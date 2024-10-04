@@ -27,15 +27,15 @@ PLaylist HyperLink
 ## Usage
 **Step 1: Clone Project using this command:**
 ```
-  git clone https://github.com/JeffinKR924/Spotify-Weather-Music.git
+git clone https://github.com/JeffinKR924/Spotify-Weather-Music.git
 ```
 **Step 2: Inside the repo run this bash command to install dependencies:**
 ```
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 **Step 3: Run the program using this bash command:**
 ```
-  python SpotifyWeatherProject.py
+python SpotifyWeatherProject.py
 ```
 
 Type in a location in the search bar and press the search button to retrieve the information. To access the Spotify playlist, you can use the URI, or press on the hyperlink to automatically take you to the playlist through your webbrowser.
