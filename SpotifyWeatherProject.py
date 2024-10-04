@@ -5,11 +5,17 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import random
 import webbrowser
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
-#All spotify developer credentials
-cid = '39bccba7d0564635884cc8635037cb50'
-secret = '67f166937a804af7bfeb494609af6c99'
+#All spotify developer credentials and openweathermap API key are stored in environment variables
+cid = os.getenv('SPOTIPY_CLIENT_ID')      
+secret = os.getenv('SPOTIPY_CLIENT_SECRET')
+openweather_api_key = os.getenv('OPENWEATHER_API_KEY') 
+
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
@@ -27,7 +33,7 @@ def prntspotify(x, z):
 #Used to access the openweathermap API
 def weatherreq(x):
     url = 'http://api.openweathermap.org/data/2.5/weather'
-    param = {'APPID': 'ebe3e5ec86c963f448a6c8f844916838', 'q': x, 'units': 'imperial'}
+    param = {'APPID': openweather_api_key, 'q': x, 'units': 'imperial'}
     data = requests.get(url, params=param)
     weather = data.json()
     displaylabel['text'] = finaldisplay(weather)
