@@ -29,7 +29,7 @@ PLaylist HyperLink
 ```
 git clone https://github.com/JeffinKR924/Spotify-Weather-Music.git
 ```
-**Step 2: Inside the repo run this bash command to install dependencies:**
+**Step 2: Inside the repo, run this bash command to install dependencies:**
 ```
 pip install -r requirements.txt
 ```
